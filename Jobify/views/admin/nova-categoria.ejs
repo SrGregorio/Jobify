@@ -1,0 +1,27 @@
+<%- include('header') %>
+     <h2>
+        Nova Categoria:
+        <a href ="/admin/categorias/">Categorias</a>
+    </h2>
+     <div>
+        <form method='POST'>
+            <label>Titulo:</label>
+            <input type="text" name="categoria">
+            <br>
+            <label>Categorias cadastradas:</label> 
+            <div>
+                <ul>
+                    <% categorias.forEach( categoria => { %>
+                    <li><%= categoria.categoria %></li>
+                    <% }) %>
+                </ul>
+            </div>
+               
+            <button>Salvar Categoria</button>   
+        </form> 
+    </div>
+<%- include('footer') %>
+        
+
+
+

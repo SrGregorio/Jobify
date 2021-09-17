@@ -1,0 +1,18 @@
+<%- include('header') %>
+     <h2>
+        Editar Categoria:
+        <a href ="/admin/categorias/">Categorias</a>
+    </h2>
+     <div>
+        <form method='POST'>
+            <label>Desrição:</label>
+            <input type="text" name="categoria" value="<%= categoria.categoria %>">
+            <br>    
+            <button>Salvar Alterações</button>   
+        </form> 
+    </div>
+<%- include('footer') %>
+        
+
+
+
